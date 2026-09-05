@@ -20,6 +20,32 @@ Um downloader modular, seguro e resiliente de arquivos e mídias do Telegram via
 
 ---
 
+## 📸 Demonstração da Interface Gráfica
+
+Confira abaixo as telas da interface gráfica do **Telegram_Downloader_CJrTools**, construída sob a estética *Dark, Flat, Minimal, Geometric & Technical*:
+
+### 1. Configuração e Conexão
+*Parâmetros de autenticação MTProto, seleção de diretórios, concorrência e integridade.*
+![Configuração e Conexão](docs/screenshots/01_configuracao.png)
+
+### 2. Seleção de Canais e Grupos
+*Listagem e busca rápida de diálogos para varredura sob demanda.*
+![Seleção de Canais e Grupos](docs/screenshots/02_canais_grupos.png)
+
+### 3. Catálogo de Mídias e Filtros
+*Indexação de conteúdo com seleção por checkbox, estimativa de volume e exportação CSV.*
+![Catálogo de Mídias e Filtros](docs/screenshots/03_catalogo_filtros.png)
+
+### 4. Downloads em Andamento
+*Monitoramento em tempo real com barra de progresso, métricas de velocidade e console de logs.*
+![Downloads em Andamento](docs/screenshots/04_downloads_em_andamento.png)
+
+### 5. Guia "Sobre" e Identidade Visual
+*Exibição da logo com contraste garantido, versão 1.0.0, autoria e stack técnica.*
+![Guia Sobre](docs/screenshots/05_sobre.png)
+
+---
+
 ## 🔒 Avisos de Segurança
 
 > [!IMPORTANT]
