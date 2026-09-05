@@ -1,0 +1,84 @@
+# Telegram sessions & auth keys
+session/
+*.session
+*.session-journal
+*.session-shm
+*.session-wal
+
+# Credentials & local configurations
+config.json
+.env
+.env.*
+!.env.example
+!config.example.json
+
+# Runtime databases
+downloads.db
+downloads.db-journal
+downloads.db-shm
+downloads.db-wal
+*.db
+*.db-shm
+*.db-wal
+
+# Logs & reports
+logs/
+*.log
+status_relatorio.txt
+status_relatorio.json
+
+# Download output directories
+output/
+downloads/
+*.part
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Testing & quality tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Compiled binaries and installers (NEVER commit to git, distributed exclusively via Releases)
+*.exe
+*.spec
+*.dll
+*.dylib
+*.bin
+

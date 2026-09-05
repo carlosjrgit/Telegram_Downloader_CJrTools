@@ -1,0 +1,14 @@
+{
+    "api_id": null,
+    "api_hash": null,
+    "phone": null,
+    "download_path": "./output",
+    "chunk_size": 524288,
+    "concurrent_downloads": 3,
+    "retry_attempts": 5,
+    "verify_integrity": true,
+    "save_hash": true,
+    "overwrite_existing": false,
+    "auto_resume": true,
+    "log_level": "INFO"
+}
