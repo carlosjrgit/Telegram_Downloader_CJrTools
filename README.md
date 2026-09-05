@@ -66,6 +66,58 @@ Para mais detalhes e procedimentos de relato de vulnerabilidades, consulte o [SE
 
 ---
 
+## 🔑 Como Obter suas Credenciais do Telegram (API ID e API Hash)
+
+Para que o **Telegram_Downloader_CJrTools** possa se comunicar com os servidores do Telegram de forma oficial e segura via MTProto, você precisará gerar suas credenciais de desenvolvedor gratuitas na plataforma oficial do Telegram.
+
+### 📝 Passo a Passo Rápido
+
+1. Acesse o portal oficial do Telegram: **[my.telegram.org](https://my.telegram.org)**.
+2. Informe o número do seu telefone no formato internacional (ex: `+5521999999999`) e clique em **Next**.
+3. Você receberá um código de confirmação no aplicativo do Telegram. Copie e cole esse código no navegador e clique em **Sign In**.
+4. No menu que aparecer, clique em **API development tools**.
+5. Preencha os campos básicos:
+   - **App title**: pode digitar qualquer nome (ex: `TelegramDownloader` ou `CJrTools`).
+   - **Short name**: uma sigla ou palavra única (ex: `cjdownloader`).
+   - Os demais campos (URL, Platform, Description) podem ser deixados em branco ou no padrão.
+6. Clique em **Create application**.
+7. Pronto! A página exibirá seus dois dados essenciais:
+   - **`api_id`**: um número inteiro (ex: `12345678`).
+   - **`api_hash`**: uma sequência alfanumérica de 32 caracteres (ex: `0123456789abcdef0123456789abcdef`).
+
+---
+
+### 🛡️ Configuração Única e Armazenamento Seguro
+
+> [!TIP]
+> **Esse procedimento só precisa ser feito uma única vez!**
+> - Ao preencher o `API ID`, `API Hash` e `Telefone` na aba **1. Configuração e Conta** da interface (ou no assistente do terminal) e clicar em **Salvar Configurações**, o programa armazena esses dados localmente de forma segura e isolada na pasta de dados do seu usuário no sistema operacional (`%LOCALAPPDATA%`).
+> - **Ao abrir o programa novamente, você NÃO precisará refazer este processo:** suas credenciais e sua sessão autenticada serão carregadas automaticamente, permitindo ir direto para a seleção de canais e downloads!
+
+---
+
+### 🗑️ Como Apagar ou Resetar suas Credenciais do Programa
+
+Caso deseje remover completamente suas credenciais (`api_id`, `api_hash`, telefone e sessão de login) deste computador, você tem total controle através de duas opções simples:
+
+#### Opção A — Diretamente pela Interface Gráfica (GUI)
+1. Abra o programa e acesse a aba **1. Configuração e Conta**.
+2. Apague o texto dos campos **API ID**, **API Hash** e **Telefone**.
+3. Clique no botão **Salvar Configurações**.
+4. Suas credenciais salvas serão limpas imediatamente.
+
+#### Opção B — Exclusão Manual dos Arquivos de Dados (Reset Completo)
+Para apagar todos os rastros de credenciais, sessão de login e histórico:
+- **Windows**: Pressione `Win + R`, digite `%LOCALAPPDATA%\Telegram_Downloader_CJrTools` e pressione Enter. Em seguida, exclua os arquivos:
+  - `config.json` (apaga seu API ID, Hash e telefone).
+  - Pasta `session/` (apaga a sessão de login ativa do Telegram).
+- **Linux**: Exclua `~/.local/share/Telegram_Downloader_CJrTools/config.json` e a pasta `session/`.
+- **macOS**: Exclua `~/Library/Application Support/Telegram_Downloader_CJrTools/config.json` e a pasta `session/`.
+
+*(Ao fazer isso, o programa voltará exatamente ao estado original de fábrica, solicitando nova configuração caso seja aberto novamente).*
+
+---
+
 ## 🚀 Instalação e Execução
 
 ### Opção 1: Baixar o Executável Pronto (Recomendado para usuários finais)
