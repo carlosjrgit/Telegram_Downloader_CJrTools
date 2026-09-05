@@ -6,3 +6,4 @@ bandit[toml]>=1.7.5
 pip-audit>=2.6.0
 pre-commit>=3.5.0
 pyinstaller>=6.4.0
+setuptools>=83.0.0

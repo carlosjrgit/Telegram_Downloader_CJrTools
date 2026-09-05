@@ -83,8 +83,12 @@ def safe_join(base_dir: str | Path, untrusted_path: str | Path) -> Path:
         ValueError: se houver tentativa de escape de diretório.
     """
     base = Path(base_dir).resolve()
-    # Se untrusted_path for absoluto, usa apenas a parte do nome/relativa segura
-    clean_untrusted = Path(untrusted_path)
+    # Normaliza separadores (\ para /) para evitar bypass multiplataforma em POSIX
+    normalized = str(untrusted_path).replace("\\", "/")
+    # Remove prefixo de drive do Windows se presente (ex: C:/ -> /)
+    normalized = re.sub(r"^[a-zA-Z]:", "", normalized)
+
+    clean_untrusted = Path(normalized)
     if clean_untrusted.is_absolute():
         clean_untrusted = Path(*clean_untrusted.parts[1:])
 
